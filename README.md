@@ -5,7 +5,7 @@
 <img 
 src="https://github.com/cusey/ImageForWiki/blob/master/Logos/ApacheSpark.PNG" 
 alt="Apache Spark" 
-height="200px"/>  
+height="150px"/>  
  
 ## Authors
 * John Cusey - CuseyHub  
