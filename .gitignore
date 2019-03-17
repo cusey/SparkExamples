@@ -26,3 +26,12 @@ local.properties
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+BasicTutorial/.gradle/2.14.1/taskArtifacts/cache.properties
+BasicTutorial/.gradle/2.14.1/taskArtifacts/cache.properties.lock
+BasicTutorial/.gradle/2.14.1/taskArtifacts/fileHashes.bin
+BasicTutorial/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin
+BasicTutorial/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin
+BasicTutorial/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin
+BasicTutorial/gradle/wrapper/gradle-wrapper.properties
+BasicTutorial/gradlew
+BasicTutorial/gradlew.bat
