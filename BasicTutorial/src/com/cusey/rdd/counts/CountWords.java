@@ -1,4 +1,4 @@
-package com.cusey.rdd;
+package com.cusey.rdd.counts;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -43,3 +43,4 @@ public class CountWords {
 
     }
 }
+ 
