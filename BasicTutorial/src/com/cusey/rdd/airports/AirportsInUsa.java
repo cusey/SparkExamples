@@ -6,7 +6,7 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
-public class AirportsByLatitude {
+public class AirportsInUsa {
 
     public static void main(String[] args) throws Exception {
 
@@ -16,23 +16,13 @@ public class AirportsByLatitude {
 
         JavaRDD<String> airports = sc.textFile("in/airports.text");
 
-        JavaRDD<String> airportsInUSA = airports.filter(line -> {
-        	
-        	        System.out.println("Line: " + line );
-        	
-        	        System.out.println("Comma Delimiter Element: " + line.split(Utils.COMMA_DELIMITER)[6] );
-        
-        			return Float.valueOf(line.split(Utils.COMMA_DELIMITER)[6]) > 40;
-        		}
-        );
+        JavaRDD<String> airportsInUSA = airports.filter(line -> line.split(Utils.COMMA_DELIMITER)[3].equals("\"United States\""));
 
         JavaRDD<String> airportsNameAndCityNames = airportsInUSA.map(line -> {
-        	
                     String[] splits = line.split(Utils.COMMA_DELIMITER);
-                    
-                    return StringUtils.join(new String[]{splits[1], splits[6]}, ",");
+                    return StringUtils.join(new String[]{splits[1], splits[2]}, ",");
                 }
         );
-        airportsNameAndCityNames.saveAsTextFile("out/airports_by_latitude.text");
+        airportsNameAndCityNames.saveAsTextFile("out/airports_in_usa.text");
     }
 }
