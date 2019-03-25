@@ -1,1 +1,38 @@
 /bin/
+/.metadata/
+*target*
+*.jar
+*.war
+*.ear
+*.class
+
+# eclipse specific git ignore
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+BasicTutorial/.gradle/2.14.1/taskArtifacts/cache.properties
+BasicTutorial/.gradle/2.14.1/taskArtifacts/cache.properties.lock
+BasicTutorial/.gradle/2.14.1/taskArtifacts/fileHashes.bin
+BasicTutorial/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin
+BasicTutorial/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin
+BasicTutorial/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin
+BasicTutorial/gradle/wrapper/gradle-wrapper.properties
+BasicTutorial/gradlew
+BasicTutorial/gradlew.bat
