@@ -31,3 +31,5 @@ BasicTutorial/.gradle/*
 BasicTutorial/gradle/wrapper/gradle-wrapper.properties
 BasicTutorial/gradlew
 BasicTutorial/gradlew.bat
+/.gradle/
+/build/
